@@ -4,8 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>INST377 Lab 4</title>
+    <script src="script.js"></script>
+    <link href="lab.css" rel="stylesheet">
 </head>
 <body>
+    <h1>INST377 - Lab 4</h1>
+    <div class="outer_container">
+        <div class ="general" id="alert_me">
+            <form name="name_form" onsubmit="alertTest()">
+                <label>Name:</label>
+                <input type="text" id="name">
+                <button type="submit">Alert Me!</button>
+            </form>
+        </div>
+
+
+        <div class="general" id="change_color">
+            <button type="submit" onclick="changeBackground()" >Change Color</button>
+        </div>
+
+
+        <div class="general" id="text_tester">
+            <form onsubmit="validationCheck()">
+                <label>Text Tester:</label>
+                <input type="text" id="input">
+                <button type="submit">Validate Text</button>
+            </form>
+        </div>
+
+
+        <div class="general" id="add_text">
+            <button type="submit">Add Text</button>
+        </div>
+    </div>
     
 </body>
 </html>

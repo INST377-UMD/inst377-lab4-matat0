@@ -1,0 +1,43 @@
+body {
+    background-color:rgb(46, 52, 75);
+}
+
+.outer_container {
+    position:relative;
+    background-color:rgb(38, 42, 61);
+    border-radius:10px;
+    width:1200px;
+    height:400px;
+}
+
+.general {
+    color:white;
+    border-style:solid;
+    border-radius:10px;
+    padding:50px;
+    background-color:rgb(78, 82, 110);
+    margin:50px;
+    width:400px;
+    position:absolute;
+    text-align:center;
+}
+
+#alert_me {
+    top:0;
+    left:0;
+}
+
+#change_color {
+    top:0;
+    right:0;
+}
+
+#text_tester {
+    bottom:0;
+    left:0;
+}
+
+#add_text {
+    bottom:0;
+    right:0;
+}
