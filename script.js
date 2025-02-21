@@ -23,7 +23,7 @@ function validationCheck() {
     console.log('Validating user input:', document.validation_form.input.value)
     var validation = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/;
     if (document.validation_form.input.value.trim() == "") {
-        alert('Enter a valid ')
+        alert('Enter a valid input')
 
         return false;
     }
