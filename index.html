@@ -8,7 +8,7 @@
     <link href="lab.css" rel="stylesheet">
 </head>
 <body>
-    <h1>INST377 - Lab 4</h1>
+    <h1 id="header">INST377 - Lab 4</h1>
     <div class="outer_container">
         <div class ="general" id="alert_me">
             <form name="name_form" onsubmit="alertTest()">
@@ -25,7 +25,7 @@
 
 
         <div class="general" id="text_tester">
-            <form onsubmit="validationCheck()">
+            <form name="validation_form" onsubmit="validationCheck()">
                 <label>Text Tester:</label>
                 <input type="text" id="input">
                 <button type="submit">Validate Text</button>
@@ -34,7 +34,7 @@
 
 
         <div class="general" id="add_text">
-            <button type="submit">Add Text</button>
+            <button type="submit" onclick="addText()">Add Text</button>
         </div>
     </div>
     

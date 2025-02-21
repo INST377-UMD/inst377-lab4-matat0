@@ -20,19 +20,22 @@ function changeBackground() {
 }
 
 function validationCheck() {
-    console.log('Validating user input:', document.contactForm.firstName.value)
-    const validationRegex = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/;
+    console.log('Validating user input:', document.validation_form.input.value)
     var validation = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/;
-    if (document.contactForm.firstName.value.trim() == "") {
-        alert('Enter a valid first name!')
+    if (document.validation_form.input.value.trim() == "") {
+        alert('Enter a valid ')
 
         return false;
     }
 
-    if (validation.test(document.contactForm.firstName.value)) {
+    if (validation.test(document.validation_form.input.value)) {
         alert('How about..... nah :(')
 
         return false;
     }
 
+}
+
+function addText() {
+    document.getElementById("header").innerHTML= "INST377 - Lab 4 Add Text"
 }
